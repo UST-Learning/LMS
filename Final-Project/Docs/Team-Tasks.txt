@@ -1,0 +1,13 @@
+1. HTML/CSS
+    * Bijin - Theme using Semantic UI
+2. Node JS / API
+    * Pallavi
+    16-Nov-2021: User Authenticatino Module
+    * Kavin: User Managemnet (CRUD)
+3. UI - React JS
+    * Kavya - Book management front end
+    * Athul - User management front end
+4. Managing GitHub/Testing/Cordination
+    * Bijin - GitHub
+5. DB - Mongo DB
+    * Bijin
