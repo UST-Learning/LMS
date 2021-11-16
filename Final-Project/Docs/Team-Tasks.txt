@@ -10,4 +10,4 @@
 4. Managing GitHub/Testing/Cordination
     * Bijin - GitHub
 5. DB - Mongo DB
-    * Bijin 
+    * Bijin
