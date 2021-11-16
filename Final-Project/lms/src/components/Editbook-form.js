@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 
+
 class EditForm extends Component {
   initialState = {
     booktitle: '',
@@ -11,7 +12,7 @@ class EditForm extends Component {
 
   state = this.initialState
   handleChange = (event) => {
-    const {booktitle, value} = event.target
+    const {booktitle, value} = event.target 
   
     this.setState({
       [booktitle]: value,
@@ -27,7 +28,7 @@ class EditForm extends Component {
     return (
       <form>
           <h1>Edit Book</h1>
-        <label htmlFor="booktitle">Book Title</label>
+        <label htmlFor="booktitle">Book-Title</label>
         <input
           type="text"
           name="booktitle"
@@ -71,5 +72,6 @@ class EditForm extends Component {
   }
   
 }
+
 
 export default EditForm;
