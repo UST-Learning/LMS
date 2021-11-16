@@ -1,0 +1,27 @@
+echo "# LMS" >> README.md
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/UST-Learning/LMS.git
+git push -u origin main
+
+
+git remote add origin https://github.com/UST-Learning/LMS.git
+git branch -M main
+git push -u origin main
+
+Cloning / Pulling the Remote Repo to your Local host.
+------------------------------------------------------
+1. Cloning: git clone https://github.com/user-name/repository.git.
+
+2. Pulling: the Remote Repo to your Local host. First you have to create a git local repo by, 
+example: git init or git init repo-name then, git pull https://github.com/user-name/repository.git.
+
+To Change the origin of the git repository:
+--------------------------------------------
+$ git remote rm origin
+$ git remote add origin git@github.com:aplikacjainfo/proj1.git
+$ git config master.remote origin
+$ git config master.merge refs/heads/master
