@@ -12,3 +12,13 @@
 5. DB - Mongo DB
     * Bijin
     Modified
+
+Installed Modules:
+    
+1. npm install semantic-ui-react
+2. npm install semantic-ui-css
+3. npm install react-router-dom
+4. npm install jsonwebtoken
+5. npm install mongoose
+6. npm install bcryptjs
+7. npm install express
