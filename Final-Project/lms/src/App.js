@@ -1,22 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import "semantic-ui-css/semantic.min.css";
+import Header from "./components/header/header";
 
 function App() {
+  
   return (
     <div className="App">
+      <div>
+        <Header />
+      </div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>LMS</h1>
+        <h2>Learning Management System</h2>
       </header>
     </div>
   );
