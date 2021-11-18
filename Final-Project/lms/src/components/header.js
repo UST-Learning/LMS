@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <Menu secondary pointing>
             <Image src={logo} width={60} />
-            <Menu.Item style={{ fontSize: 16 }} /* as={Link} to="/" point to appropriate router links */>LMS</Menu.Item>
+            <Menu.Item /* as={Link} to="/" point to appropriate router links */>LMS</Menu.Item>
             <Menu.Item>Book</Menu.Item>
 
             <Menu.Item position="right">
