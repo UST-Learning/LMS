@@ -1,13 +1,14 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
+import "semantic-ui-css/semantic.min.css";
 import { Menu, Image, Button, Icon } from "semantic-ui-react";
-import logo from '../../logo.svg';
+import logo from '../logo.svg';
 
 const Header = () => {
     return (
         <Menu secondary pointing>
             <Image src={logo} width={60} />
-            <Menu.Item style={{ fontSize: 16 }} /* </Menu>as={Link} to="/" point to appropriate router links */>LMS</Menu.Item>
+            <Menu.Item style={{ fontSize: 16 }} /* as={Link} to="/" point to appropriate router links */>LMS</Menu.Item>
             <Menu.Item>Book</Menu.Item>
 
             <Menu.Item position="right">

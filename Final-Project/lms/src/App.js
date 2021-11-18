@@ -1,7 +1,7 @@
 
 import './App.css';
-import "semantic-ui-css/semantic.min.css";
-import Header from "./components/header/header";
+
+import Header from "./components/header";
 
 function App() {
   
@@ -19,3 +19,4 @@ function App() {
 }
 
 export default App;
+
