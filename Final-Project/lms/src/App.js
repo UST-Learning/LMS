@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
+import EditForm from './components/Editbook-form';
+import AddForm from './components/Addbook-form'
+import AdduserForm from './components/Adduser-form'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import EdituserForm from './components/Editbook-form'
+import SearchbookForm from './components/Searchbook-form';
 
-export default App;
+import Form from './components/Login-form';
+
+export default ()=>{
+  return(
+    <>
+    <Router>
+     
+      <Route path="/" exact component={Form}/>
+      <Route path="/adduser" exact component={AdduserForm}/>
+      <Route path="/searchbook" exact component={SearchbookForm}/>
+     
+    </Router>
+    </>
+  )
+};

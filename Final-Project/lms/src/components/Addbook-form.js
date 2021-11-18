@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-class AddForm extends Component {
+class AddbookForm extends Component {
   initialState = {
     booktitle: '',
     bookcategory: '',
@@ -72,4 +72,4 @@ class AddForm extends Component {
   
 }
 
-export default AddForm;
+export default AddbookForm;
