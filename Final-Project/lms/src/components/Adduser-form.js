@@ -6,11 +6,14 @@ class AdduserForm extends Component {
 if(history) history.push('/');
   }
   initialState = {
-    email: '',
-    password: '',
-    login_id:'',
-    fname:'',
-    address:'',
+    userid: '',
+    loginid: '',
+    username: '',
+    useremail:'',
+    userpassword:'',
+    usertype: '',
+    userstatus:'',
+   
   }
 
   state = this.initialState
