@@ -2,24 +2,24 @@
 import { Link } from "react-router-dom";
 import "semantic-ui-css/semantic.min.css";
 import { Menu, Image, Button, Icon } from "semantic-ui-react";
+import logo from '../logo.svg';
 
-
-const Footer = () => {
+const Header = () => {
     return (
         <Menu secondary pointing>
-            
-            <Menu.Item style={{ fontSize: 16 }} /* as={Link} to="/" point to appropriate router links */>LMS</Menu.Item>
-            <Menu.Item>Book</Menu.Item>
+            <Image src={logo} width={60} />
+            <Menu.Item /* as={Link} to="/" point to appropriate router links */>LMS</Menu.Item>
+            <Menu.Item>Copyright</Menu.Item>
 
             <Menu.Item position="right">
                 <Button /* as={Link} to="create/account" point to appropriate router links*/ primary basic icon>
                     <Icon name="add user"></Icon>
-                    Create Account
+                    About Us
                 </Button></Menu.Item>
             <Menu.Item>
                 <Button primary basic icon>
                     <Icon name="sign in"></Icon>
-                    Sign In
+                    Contact Us
                 </Button>
             </Menu.Item>
 
@@ -27,4 +27,4 @@ const Footer = () => {
     );
 }
 
-export default Footer;
+export default Header;
