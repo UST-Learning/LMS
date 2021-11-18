@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import Header from "./components/header";
+//import Header from "./components/header";
 import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import EditForm from './components/Editbook-form';
 import AddForm from './components/Addbook-form'
@@ -16,7 +16,7 @@ export default ()=>{
     <>
     <div className="App">
       <div>
-        <Header />
+    
 
       </div>
       <header className="App-header">
