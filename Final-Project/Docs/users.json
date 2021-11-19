@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "6195d30fed9d7f054a525486"
+  },
+  "user_name": "karmi",
+  "user_email": "karmi@abc.com",
+  "user_address": "india",
+  "user_type": "user",
+  "user_status": "active",
+  "user_login_id": "karmi",
+  "user_password": "$2a$10$fU3PL6nmG4/VJaw4v.ZgLOeJN37iTjoKlHI7Z8Aw0eg1meU/4p9KW",
+  "__v": 0
+}]

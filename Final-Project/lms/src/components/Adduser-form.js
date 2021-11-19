@@ -35,8 +35,8 @@ class AdduserForm extends Component {
         <Divider /><br />
         <Form.Field required>
           <label>Login id</label>
-          <input id="Login" type="text" name="Login" placeholder="login id" required="" capture value={login_id}
-            onChange={this.handleChange} /><br></br>
+          <input id="login" type="text" name="login" placeholder="login id" required="" capture value={login_id}
+            onChange={this.handleChange} />
         </Form.Field>
         <Form.Field required>
           <label>Email </label>
