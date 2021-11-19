@@ -31,7 +31,6 @@ class AdduserForm extends Component {
 
     return (
       <Form inverted style={{ width: "470px" }}>
-
         <header><h1>Add User</h1></header>
         <Divider /><br />
         <Form.Field required>
