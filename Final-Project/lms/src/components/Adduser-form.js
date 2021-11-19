@@ -6,14 +6,11 @@ class AdduserForm extends Component {
 if(history) history.push('/');
   }
   initialState = {
-    userid: '',
-    loginid: '',
-    username: '',
-    useremail:'',
-    userpassword:'',
-    usertype: '',
-    userstatus:'',
-   
+    email: '',
+    password: '',
+    login_id:'',
+    fname:'',
+    address:'',
   }
 
   state = this.initialState
@@ -39,7 +36,7 @@ if(history) history.push('/');
                    </header>
                 <label class="header">Login id</label>
                 
-                <input id="Login" type="text" name="Login" placeholder="login id" required="" capture value={login_id}
+                <input id="login" type="text" name="login" placeholder="login id" required="" capture value={login_id}
           onChange={this.handleChange}/><br></br>
             </div>
         <label htmlFor="email">Email </label>

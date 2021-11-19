@@ -43,11 +43,10 @@ class Form extends Component {
                  <header><h1>Login</h1></header>
                 <label class="header">User type</label>
                 
-                <select value={usertype}>
-            usertype
-            <option value= "admin">Admin</option>
+                <select value={this.state.value} onChange={this.handleChange}>           
+            <option value="admin">Admin</option>
             <option value="user">User</option>
-          </select>
+            </select>
             </div>
         <label htmlFor="name">User Name </label>
         <input
@@ -72,4 +71,4 @@ class Form extends Component {
   
 }
 
-export default Form;
+export default Form
