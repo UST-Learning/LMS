@@ -8,21 +8,8 @@ const Header = () => {
     return (
         <Menu secondary pointing>
             <Image src={logo} width={60} />
-            <Menu.Item /* as={Link} to="/" point to appropriate router links */>LMS</Menu.Item>
-            <Menu.Item>Copyright</Menu.Item>
-
-            <Menu.Item position="right">
-                <Button /* as={Link} to="create/account" point to appropriate router links*/ primary basic icon>
-                    <Icon name="add user"></Icon>
-                    About Us
-                </Button></Menu.Item>
-            <Menu.Item>
-                <Button primary basic icon>
-                    <Icon name="sign in"></Icon>
-                    Contact Us
-                </Button>
-            </Menu.Item>
-
+            <Menu.Item>LMS</Menu.Item>
+            <Menu.Item position="right" /* as={Link} to="/" point to appropriate router links */>Library Management System, Copyright@2021.</Menu.Item>
         </Menu>
     );
 }
