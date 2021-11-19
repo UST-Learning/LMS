@@ -36,14 +36,9 @@ if(history) history.push('/');
           id="title"
           value={title}
           onChange={this.handleChange} /><br></br>
-          <label htmlFor="bookcategory">Book Category</label>
-        <input
-          type="text"
-          name="bookcategory"
-          id="bookcategory"
-          value={bookcategory}
-          onChange={this.handleChange} />
-          <select></select><br></br>
+         <label class="header">Book Category</label>
+                <select value={this.state.value} onChange={this.handleChange}>           
+            </select><br></br>
         <input type="button" value="Search Book" onClick={this.submitForm} />
           <input type="button" value="Cancel" onClick={this.inhistory} />
       </form>
