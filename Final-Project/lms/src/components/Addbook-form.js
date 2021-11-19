@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-class AddForm extends Component {
+class AddbookForm extends Component {
   initialState = {
     booktitle: '',
     bookcategory: '',
@@ -34,15 +34,9 @@ class AddForm extends Component {
           id="booktitle"
           value={booktitle}
           onChange={this.handleChange} /><br></br>
-        <label htmlFor="bookcategory">Book Category</label>
-        <input
-          type="text"
-          name="bookcategory"
-          id="bookcategory"
-          value={bookcategory}
-          onChange={this.handleChange} />
-          <select> </select>
-          <br></br>
+        <label class="header">Book Category</label>
+                <select value={this.state.value} onChange={this.handleChange}>           
+            </select><br></br>
           <label htmlFor="bookauthor">Book Author</label>
         <input
           type="text"
@@ -72,4 +66,4 @@ class AddForm extends Component {
   
 }
 
-export default AddForm;
+export default AddbookForm;

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 
-class EditForm extends Component {
+class EditbookForm extends Component {
   initialState = {
     booktitle: '',
     bookcategory: '',
@@ -35,15 +35,9 @@ class EditForm extends Component {
           id="booktitle"
           value={booktitle}
           onChange={this.handleChange} /><br></br>
-        <label htmlFor="bookcategory">Book Category</label>
-        <input
-          type="text"
-          name="bookcategory"
-          id="bookcategory"
-          value={bookcategory}
-          onChange={this.handleChange} />
-          <select></select>
-          <br></br>
+        <label class="header">Book Category</label>
+                <select value={this.state.value} onChange={this.handleChange}>           
+            </select><br></br>
           <label htmlFor="bookauthor">Book Author</label>
         <input
           type="text"
@@ -74,4 +68,4 @@ class EditForm extends Component {
 }
 
 
-export default EditForm;
+export default EditbookForm;

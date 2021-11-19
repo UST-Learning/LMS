@@ -27,6 +27,3 @@ $ git config master.remote origin
 $ git config master.merge refs/heads/master
 modified
 
-To swith between branches:
-----------------------------
-git checkout <your-branch-name>
