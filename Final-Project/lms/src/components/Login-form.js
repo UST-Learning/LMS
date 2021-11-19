@@ -1,29 +1,28 @@
-import React, {Component} from 'react'
-//import { useHistory } from 'react-router-dom';
-//import {Link} from 'react-router-dom';
+import React, { Component } from 'react'
+import { Button, Checkbox, Divider, Form } from "semantic-ui-react";
 
-class Form extends Component {
-   inhistory = () =>{
-        const {history} =this.props;
-    if(history) history.push('/searchbook');
+class Forms extends Component {
+  inhistory = () => {
+    const { history } = this.props;
+    if (history) history.push('/searchbook');
 
-    }
-    onhistory = () =>{
-    const {history} =this.props;
-    if(history) history.push('/adduser');
-    
-    }
-   
+  }
+  onhistory = () => {
+    const { history } = this.props;
+    if (history) history.push('/adduser');
+
+  }
+
   initialState = {
     name: '',
     password: '',
-   usertype:''
+    usertype: ''
   }
 
   state = this.initialState
   handleChange = (event) => {
-    const {name, value} = event.target
-  
+    const { name, value } = event.target
+
     this.setState({
       [name]: value,
     })
@@ -34,41 +33,54 @@ class Form extends Component {
   }
   render() {
     const { name, password, usertype } = this.state;
-    const {history} =this.props;
-   
-  
+    const { history } = this.props;
+
     return (
-      <form>
-               <div class="form-control">
-                 <header><h1>Login</h1></header>
-                <label class="header">User type</label>
-                
-                <select value={this.state.value} onChange={this.handleChange}>           
-            <option value="admin">Admin</option>
-            <option value="user">User</option>
+
+      <div>
+        <Form inverted style={{ width: "470px" }}>
+
+          <header><h1>Login</h1></header>
+          <Divider /><br />
+          <Form.Field required>
+            <label>User Type</label>
+
+            <select value={usertype}>
+              usertype
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
             </select>
-            </div>
-        <label htmlFor="name">User Name </label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          value={name}
-          onChange={this.handleChange} />
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          value={password}
-          onChange={this.handleChange} />
-          <input type="button" value="Login" onClick={this.inhistory} />
-          <input type="button" value="Guest" onClick={this.inhistory} />
-          <input type="button" value="Create Account" onClick={this.onhistory} />
-      </form>
+          </Form.Field>
+          <Form.Field required>
+            <label>User Name </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value={name}
+              onChange={this.handleChange} />
+          </Form.Field>
+          <Form.Field required>
+            <label>Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              value={password}
+              onChange={this.handleChange} />
+          </Form.Field>
+          <Divider />
+          <Button onClick={this.inhistory} primary basic inverted color='grey'>Login</Button>
+          <Button onClick={this.inhistory} primary basic inverted color='black'>Guest</Button>
+          <Button onClick={this.onhistory}primary basic inverted color='black'>Create Account</Button>
+        </Form>
+
+      </div>
+
     );
   }
-  
+
 }
 
-export default Form
+export default Forms;
+

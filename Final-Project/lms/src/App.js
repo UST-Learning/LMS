@@ -11,9 +11,10 @@ import AdduserForm from './components/Adduser-form'
 import EdituserForm from './components/Editbook-form'
 import SearchbookForm from './components/Searchbook-form';
 
-import Form from './components/Login-form';
+import Forms from './components/Login-form';
 
-
+//<h1>LMS</h1>
+//<h2>Learning Management System</h2>
 export default () => {
   return (
     <>
@@ -21,17 +22,21 @@ export default () => {
         <Header />
         <header className="App-header">
 
-          <h1>LMS</h1>
-          <h2>Learning Management System</h2>
+
+
           <Router>
 
-            <Route path="/" exact component={Form} />
+            <Route path="/" exact component={Forms} />
             <Route path="/adduser" exact component={AdduserForm} />
             <Route path="/searchbook" exact component={SearchbookForm} />
 
           </Router>
         </header>
-        <Footer />
+
+        <footer>
+          <Footer />
+        </footer>
+
       </div>
 
     </>
