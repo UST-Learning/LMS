@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import { Button, Checkbox, Divider, Form } from "semantic-ui-react";
 class SearchbookForm extends Component {
   inhistory = () =>{
     const {history} =this.props;
@@ -27,21 +27,21 @@ if(history) history.push('/');
     const {title,bookcategory} = this.state;
   
     return (
-      <form>
-          <h1>Search Book</h1>
-        <label htmlFor="title">Title</label>
-        <input
-          type="text"
-          name="title"
-          id="title"
-          value={title}
-          onChange={this.handleChange} /><br></br>
-         <label class="header">Book Category</label>
-                <select value={this.state.value} onChange={this.handleChange}>           
-            </select><br></br>
-        <input type="button" value="Search Book" onClick={this.submitForm} />
-          <input type="button" value="Cancel" onClick={this.inhistory} />
-      </form>
+      <Form inverted style={{ width: "470px" }}>
+         <header> <h1>Search Book</h1> </header> 
+         <Divider /><br />
+         <Form.Field>
+        <label>Title</label>
+        <input type="text" name="title" id="title" value={title} onChange={this.handleChange} />
+           </Form.Field>
+           <Form.Field>
+         <label>Book Category</label>
+                <select value={this.state.value} onChange={this.handleChange}> </select>
+            </Form.Field>
+            <Divider />
+          <Button onClick={this.submitForm} primary basic inverted color='grey'>Search Book</Button>
+          <Button onClick={this.inhistory} primary basic inverted color='black'>Cancel</Button>
+      </Form>
     );
   }
   

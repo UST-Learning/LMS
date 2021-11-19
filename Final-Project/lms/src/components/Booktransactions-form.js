@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import { Button, Checkbox, Divider, Form } from "semantic-ui-react";
 class BooktransactionForm extends Component {
   initialState = {
     title: '',
@@ -22,26 +22,21 @@ class BooktransactionForm extends Component {
     const {title,username} = this.state;
   
     return (
-      <form>
-          <h1>Book Transactions</h1>
-        <label htmlFor="title">Title</label>
-        <input
-          type="text"
-          name="title"
-          id="title"
-          value={title}
-          onChange={this.handleChange} /><br></br>
-          <label htmlFor="username">Username</label>
-        <input
-          type="text"
-          name="username"
-          id="username"
-          value={username}
-          onChange={this.handleChange} />
-         <br></br>
-        <input type="button" value="Search" onClick={this.submitForm} />
-          <input type="button" value="Cancel" onClick={this.submitForm} />
-      </form>
+      <Form inverted style={{ width: "470px" }}>
+        <header><h1>Book Transactions</h1></header>
+        <Divider /><br />
+        <Form.Field>
+        <label>Title</label>
+        <input type="text" name="title"id="title" value={title} onChange={this.handleChange} />
+        </Form.Field>
+        <Form.Field>
+        <label>Username</label>
+        <input type="text" name="username" id="username"value={username} onChange={this.handleChange} />
+        </Form.Field>
+        <Divider /><br />
+        <Button onClick={this.submitForm} primary basic inverted color='grey'>Search</Button>
+        <Button onClick={this.submitForm} primary basic inverted color='black'>Cancel</Button>
+      </Form>
     );
   }
   
