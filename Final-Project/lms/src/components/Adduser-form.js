@@ -54,7 +54,7 @@ class AdduserForm extends Component {
         <Form.Field>
           <Form.TextArea label='Address' placeholder='Please write your address...' value={address} onChange={this.handleChange} />
         </Form.Field>
-
+        <Divider /><br />
         <Button onClick={this.submitForm}>Create account</Button>
         <Button onClick={this.inhistory}>Cancel</Button>
 
